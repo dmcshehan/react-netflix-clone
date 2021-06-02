@@ -7,10 +7,10 @@ export default function FaqsContainer() {
   return (
     <Accordion>
       <Accordion.Title>Frequesty Asked Questions</Accordion.Title>
-      {faqData.map((item) => (
-        <Accordion.Item key={item.id}>
-          <Accordion.Header>{item.header}</Accordion.Header>
-          <Accordion.Body>{item.body}</Accordion.Body>
+      {faqData.map((faq) => (
+        <Accordion.Item key={faq.id}>
+          <Accordion.Header>{faq.header}</Accordion.Header>
+          <Accordion.Body>{faq.body}</Accordion.Body>
         </Accordion.Item>
       ))}
     </Accordion>
